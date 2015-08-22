@@ -10,6 +10,7 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect("/index.html");
+        resp.getOutputStream().print("<b>Hello World</b><br>" +
+                "<a href=index.html>index.html</a>");
     }
 }
