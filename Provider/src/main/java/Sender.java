@@ -58,12 +58,7 @@ public class Sender {
         }
 
         private void writeResponse(String s) throws Throwable {
-            String response = "HTTP/1.1 200 OK\r\n" +
-                    "Server: YarServer/2009-09-09\r\n" +
-                    "Content-Type: text/html\r\n" +
-                    "Content-Length: " + s.length() + "\r\n" +
-                    "Connection: close\r\n\r\n";
-            String result = response + s + "\n";
+            String result =   s + "\n";
             outputStream.write(result.getBytes());
             outputStream.flush();
         }
