@@ -15,3 +15,5 @@ Server/.idea/*
 Server/.idea/workspace.xml
 Provider/Provider.iml
 Server/.idea/workspace.xml
+Provider/pom.xml
+Provider/Provider.iml
