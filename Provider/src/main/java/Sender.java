@@ -1,3 +1,5 @@
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -7,12 +9,20 @@ import java.net.Socket;
  */
 public class Sender {
 
-    public void run() throws Throwable{
-        ServerSocket serverSocket = new ServerSocket(8080);
-        while (true) {
+    private int port;
+    private Logger logger= Logger.getLogger(Sender.class.getName());
 
+    public void setPort(int port1) {
+        this.port = port1;
+    }
+
+    public void run() throws Throwable{
+        ServerSocket serverSocket = new ServerSocket(port);
+        logger.info("Start");
+        while (true) {
             Socket socket = serverSocket.accept();
-            System.out.println("New client");
+            System.out.println(socket.getInetAddress().toString());
+            logger.info("New connection");
             new Thread(new SocketProcessor(socket)).start();
         }
 
@@ -53,7 +63,7 @@ public class Sender {
                     "Content-Type: text/html\r\n" +
                     "Content-Length: " + s.length() + "\r\n" +
                     "Connection: close\r\n\r\n";
-            String result = response + s;
+            String result = response + s + "\n";
             outputStream.write(result.getBytes());
             outputStream.flush();
         }
@@ -62,6 +72,7 @@ public class Sender {
             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
             while(true) {
                 String s = br.readLine();
+                System.out.println(s);
                 if(s == null || s.trim().length() == 0) {
                     break;
                 }
