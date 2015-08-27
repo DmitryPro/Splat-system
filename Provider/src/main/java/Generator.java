@@ -1,10 +1,6 @@
 import java.util.Random;
 
 /**
- * Created by ִלטענטי on 25.08.2015.
- */
-
-/**
  * @author Dmitry Prokopenko
  */
 public class Generator {
