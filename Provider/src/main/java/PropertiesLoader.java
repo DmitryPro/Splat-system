@@ -1,8 +1,6 @@
 import org.apache.log4j.Logger;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Properties;
 
 /**
@@ -10,9 +8,13 @@ import java.util.Properties;
  */
 public class PropertiesLoader {
 
+    private static PropertiesLoader instance;
     private Properties properties;
     Logger logger = Logger.getLogger(PropertiesLoader.class.getName());
 
+    /**
+     *
+     */
     PropertiesLoader() {
         this.properties = new Properties();
         try {
@@ -23,12 +25,25 @@ public class PropertiesLoader {
         }
     }
 
+    /**
+     * @return
+     */
+    public static PropertiesLoader getInstance() {
+        if(instance == null) {
+            instance = new PropertiesLoader();
+        }
+        return instance;
+    }
+
+    /**
+     * @throws IOException
+     */
     private void load() throws IOException{
 
         properties = new Properties();
         String fileName = "config.properties";
 
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
+        InputStream inputStream = new FileInputStream(fileName);
 
         if(inputStream != null) {
             properties.load(inputStream);
@@ -38,10 +53,19 @@ public class PropertiesLoader {
         }
     }
 
+    /**
+     * @param property
+     * @return
+     */
     public String getValue(String property) {
         return properties.getProperty(property);
     }
 
+    /**
+     * @param property
+     * @param defaultValue
+     * @return value of this property in config file or default value
+     */
     public String getOrDefault(String property,String defaultValue) {
         return properties.getProperty(property,defaultValue);
     }
