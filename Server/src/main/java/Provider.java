@@ -8,53 +8,152 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * Created by Freemahn on 27.08.2015.
+ * This class represents provider entity.
+ * Works in a single thread
+ *
+ * @author Pavel Gordon
  */
-class Provider implements Runnable {
+public class Provider implements Runnable {
     private Logger logger = Logger.getLogger(Provider.class);
+
+    /**
+     * Type of this provider data representation
+     */
     public static final String JSON = "JSON";
+    /**
+     * Type of this provider data representation
+     */
     public static final String XML = "XML";
-    private String type;
+
+    /**
+     * Provider fields
+     */
+    private String dataType;
     private String ip;
     private int port;
     private int providerId;
     private Socket socket;
+
+    /*Used to generate Provider id*/
     private static int uid = 1;
     private BufferedReader dataReader;
-    InputStream inputStream;
-    private static XStream xStream = new XStream();
 
-    /*public Provider(String type, String ip, int port) throws IOException {
-        this.type = type;
+    //libraries to parse
+    private XStream xStream;
+    private Gson gson;
+
+    public Provider(String type, String ip, int port) throws IOException {
+        this.dataType = type;
         this.ip = ip;
         this.port = port;
         providerId = uid++;
         socket = new Socket(InetAddress.getByName(ip), port);
         InputStream sin = socket.getInputStream();
         dataReader = new BufferedReader(new InputStreamReader(sin));
-    }*/
+    }
 
 
     /**
-     * Default Provider
+     * Initialises fields with default values
+     * and tries to establish connection via Socket.
+     * In case of exception, shuts down(for now).
+     * <p>
+     * (@see java.net.Socket)
      */
     public Provider() {
-        type = XML;
+        dataType = XML;
         ip = "198.199.73.244";
         port = 6969;
         providerId = uid++;
         try {
             socket = new Socket(InetAddress.getByName(ip), port);
             logger.info("created provider with id[" + providerId + "]");
-            inputStream = socket.getInputStream();
-            dataReader = new BufferedReader(new InputStreamReader(inputStream));
+            dataReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         } catch (IOException e) {
             logger.error("cannot connect to provider " + e);
+            // this.wait();
+            System.exit(1);//TODO change to reconnect after time
             e.printStackTrace();
         }
 
     }
 
+    /**
+     * Provider lifecycle
+     *
+     * @see ServerWebSocket#sendData(DataObject)
+     */
+    public void run() {
+        xStream = new XStream();
+        gson = new Gson();
+        while (true) {
+            DataObject message = dataType.equals(JSON) ? parseJSON() : parseXML();
+            if (message == null) continue;
+            logger.info("parsed from provider" + message);
+            ServerWebSocket.sendData(new ExpandedDataObject(message, providerId));
+            logger.info("sent to client " + message);
+        }
+
+
+    }
+
+    /**
+     * Reads XML-encoded DataObject
+     * and parses it using xStream
+     *
+     * @return result - parsed DataObject
+     * or null - if there are problems with either
+     * reading from InputStream
+     * or parsing with xStream
+     */
+
+    DataObject parseXML() {
+        DataObject result = null;
+        String line = "";
+        try {
+            while (!line.contains("</DataObject>"))
+                line += dataReader.readLine();
+            // logger.info("received " + line);
+        } catch (IOException e) {
+            logger.error("Cannot read from socket " + e);
+            return null;
+        }
+
+        try {
+            result = (DataObject) xStream.fromXML(line);
+        } catch (Exception e) {
+            logger.error("ERROR when parsing xml " + e);
+            e.printStackTrace();
+            return null;
+        }
+        return result;
+    }
+
+    /**
+     * Reads JSON-encoded DataObject
+     * and parses it using Gson
+     *
+     * @return result - parsed DataObject or null
+     * - if there are problems with either
+     * reading from InputStream
+     * or parsing with Gson
+     */
+    DataObject parseJSON() {
+        DataObject result = null;
+        String line = "";
+        try {
+            line = dataReader.readLine();
+            // logger.info("received " + line);
+        } catch (IOException e) {
+            logger.error("Cannot read from socket " + e);
+            return null;
+        }
+
+        result = gson.fromJson(line, DataObject.class);
+        return result;
+    }
+
+    /*Getters and setters*/
     public Socket getSocket() {
         return socket;
     }
@@ -64,11 +163,11 @@ class Provider implements Runnable {
     }
 
     public String getType() {
-        return type;
+        return dataType;
     }
 
     public void setType(String type) {
-        this.type = type;
+        this.dataType = type;
     }
 
     public String getIp() {
@@ -94,54 +193,4 @@ class Provider implements Runnable {
     public void setProviderId(int providerId) {
         this.providerId = providerId;
     }
-
-
-    @Override
-    public void run() {
-        while (true) {
-            DataObject message = type.equals(JSON) ? parseJSON() : parseXML();
-            if (message == null) continue;
-            logger.info("parsed from provider" + message);
-            ServerWebSocket.sendData(new ExpandedDataObject(message, providerId));
-            logger.info("sent to client " + message);
-        }
-
-
-    }
-
-    DataObject parseXML() {
-        DataObject result = null;
-        String line = "";
-        try {
-            while (!line.contains("</DataObject>"))
-                line += dataReader.readLine();
-        } catch (IOException e) {
-            logger.error("Cannot read from socket " + e);
-            return null;
-        }
-        logger.info("received " + line);
-        try {
-            result = (DataObject) xStream.fromXML(line);
-        } catch (Exception e) {
-            logger.error("ERROR when parsing xml " + e);
-            e.printStackTrace();
-        }
-        return result;
-    }
-
-    DataObject parseJSON() {
-        DataObject result = null;
-        String line = "";
-        try {
-            line = dataReader.readLine();
-            // logger.info("received " + line);
-        } catch (IOException e) {
-            logger.error("Cannot read from socket " + e);
-            return null;
-        }
-
-        result = new Gson().fromJson(line, DataObject.class);
-        return result;
-    }
-
 }

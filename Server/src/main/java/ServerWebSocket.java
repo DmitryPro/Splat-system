@@ -10,18 +10,29 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-@ServerEndpoint(value = "/events/")
+
 /**
- * Created by Freemahn on 26.08.2015.
+ * Server-side endpoint
+ *
+ * @author PavelGordon
  */
+@ServerEndpoint(value = "/events/")
 public class ServerWebSocket {
     private static Logger logger = Logger.getLogger(ServerWebSocket.class);
-    private static Set<Session> sessions = Collections.synchronizedSet(new HashSet<Session>());
+
+    /**
+     * Contains all connections to the clents
+     */
+    private static Set<Session> sessions = Collections.synchronizedSet(new HashSet<>());
 
 
     /**
      * Sends either DataObject or ExpandedDataObject
      * to all currently connected clients
+     *
+     * @param data DataObject or its instances to send
+     * @see DataObject
+     * @see ExpandedDataObject
      */
     public static void sendData(DataObject data) {
         try {
@@ -29,19 +40,23 @@ public class ServerWebSocket {
                 sc.getBasicRemote().sendText(data.toString());
             }
         } catch (Exception e) {
-            // onWebSocketError(e);
+            logger.info("Errors while send data" + e);
         }
 
     }
 
+    /**
+     * Sends String message
+     * to all currently connected clients
+     * Used for testing
+     */
     public static void sendData(String data) {
-        //logger.info("into send data. sessions size" + sessions.size());
 
         try {
             for (Session sc : sessions) {
                 //logger.info("trying to send data" + data);
                 sc.getBasicRemote().sendText(data);
-               // logger.info("sent data " + data);
+                // logger.info("sent data " + data);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -49,19 +64,23 @@ public class ServerWebSocket {
 
     }
 
+    /**
+     * Handles client connection.
+     * Adds into sessions
+     *
+     * @param sess - connection to client
+     */
     @OnOpen
     public void onWebSocketConnect(Session sess) {
-        // System.out.println("Client Connected: " + sess);
-        /*try {
-            //sess.getBasicRemote().sendText("HELLO");
-        } catch (IOException e) {
-             logger.error(e);
-           // e.printStackTrace();
-        }*/
         logger.info("Client Connected: " + sess);
         sessions.add(sess);
     }
 
+    /**
+     * Handles receiving text from client
+     *
+     * @param message message, which is got by server
+     */
 
     @OnMessage
     public void onWebSocketText(String message) {
@@ -70,11 +89,23 @@ public class ServerWebSocket {
 
     }
 
+    /**
+     * Handles closing client-side websocket
+     *
+     * @param session connection to client
+     */
+
     @OnClose
     public void onWebSocketClose(Session session) {
         System.out.println("Socket Closed: " + session);
         sessions.remove(session);
     }
+
+    /**
+     * Handles error in websocket work
+     *
+     * @param cause reason of the error
+     */
 
     @OnError
     public void onWebSocketError(Throwable cause) {

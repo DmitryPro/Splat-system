@@ -1,70 +1,52 @@
-import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.util.Scanner;
+import javax.websocket.server.ServerContainer;
 
 import org.apache.log4j.Logger;
-import com.google.gson.Gson;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.DefaultHandler;
+import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 
 
 /**
- * Created by Freemahn on 24.08.2015.
+ * This class is an entry point to server.
+ * When started, it creates a WebSocket endpoint,
+ * which provides connection to server (@see ServerWebSocket)
+ * and creates ProvidersHolder instance in another thread (@see ProvidersHolder)
+ *
+ * @author Pavel Gordon
+ *
  */
-class SplatServer {
-    private static Logger logger = Logger.getLogger(SplatServer.class.getName());
 
-    public static void main(String[] ar) throws Exception {
-        Gson gson = new Gson();
-        Server server = new Server(8080);
-        server.setHandler(new DefaultHandler());
+public class SplatServer {
+    private static Logger logger = Logger.getLogger(SplatServer.class);
+    private static int DEFAULT_PORT = 8080;
+    private static int DEFAULT_TIMEOUT = 1_0000;
+    public static void main(String[] args) {
+        Server server = new Server();
+        ServerConnector connector = new ServerConnector(server);
+        connector.setPort(DEFAULT_PORT);
+        server.addConnector(connector);
+        connector.setIdleTimeout(DEFAULT_TIMEOUT);
 
-        server.start();
-        server.join();
-        logger.info("Init");
-        int providerPort = 6969;
-        String providerAddress = "127.0.0.1";
-        //address = "46.101.58.183";//server address
-        providerAddress = "198.199.73.244";//provider address
+        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+        context.setContextPath("/");
+        server.setHandler(context);
 
-        InetAddress ipAddress = InetAddress.getByName(providerAddress);
-        System.out.println("Trying to connect with address " + providerAddress + " and port " + providerPort + "");
-        Socket providerSocket = new Socket(ipAddress, providerPort);
-        System.out.println("Connected:" + providerSocket.isConnected());
-        logger.info("Trying to connect with address " + providerAddress + " and port " + providerPort + "");
-        InputStream sin = providerSocket.getInputStream();
-        OutputStream sout = providerSocket.getOutputStream();
+        try {
+            // Initialize javax.websocket layer
+            ServerContainer wscontainer = WebSocketServerContainerInitializer.configureContext(context);
+            // Add WebSocket endpoint to javax.websocket layer
+            wscontainer.addEndpoint(ServerWebSocket.class);
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(sin));
-        String line = null;
-        sout.write("hello\n\n".getBytes());
-        sout.flush();
-        System.out.println("hello sent");
-        logger.info("hello sent");
+            //starts connection to providers in new thread
+            new Thread(new ProvidersHolder()).start();
+            server.start();
+            server.dump(System.err, "tag");
+            server.join();
 
-        line = br.readLine();
-        System.out.println("answer received " + line);
-        logger.info("answer received " + line);
-        while (true) {
-            line = br.readLine();
-            if (line == null) continue;
-            System.out.println("Server answer is: " + line);
-            logger.info("answer received " + line);
-           /*
-            Gson gson = new Gson();
-            DataObject dataObject = new DataObject(1, 2);
-            String mess = gson.toJson(dataObject);
-            System.out.println(mess);
-            DataObject res = gson.fromJson(mess, DataObject.class);*/
-            DataObject result = gson.fromJson(line, DataObject.class);
-            System.out.println(result);
-            writeIntoDB(line);
+        } catch (Throwable t) {
+            t.printStackTrace(System.err);
         }
-
-    }
-
-    private static void writeIntoDB(String line) {
     }
 
 
