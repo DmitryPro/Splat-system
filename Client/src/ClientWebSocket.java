@@ -8,6 +8,16 @@ import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 
+
+/**
+ * This is client endpoint.
+ * Contains implementation of interaction 
+ * between server and client in client side
+ * @see Client
+ * @see 
+ * @author Pavel Gordon
+ *
+ */
 @ClientEndpoint
 public class ClientWebSocket {
     private  Logger logger = Logger.getLogger(ClientWebSocket.class);

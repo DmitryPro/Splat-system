@@ -1,5 +1,3 @@
-
-
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -11,17 +9,29 @@ import javax.websocket.DeploymentException;
 import javax.websocket.Session;
 import javax.websocket.WebSocketContainer;
 
+
+/**
+ * A simple client.
+ * This class is responsible for connecting to server 
+ * and getting data from it.
+ * For displaying data, (@see FrameDisplayer)  
+ *
+ * @author Pavel Gordon
+ */
 public class Client {
     private static Logger logger = Logger.getLogger(Client.class);
 
+    
+    /**
+     * Will be moved into config file
+     */
 
     static String serverIp = "localhost";
     static int serverPort = 8080;
 
     public static void main(String[] args) {
 
-        //URI uri = URI.create("ws://" + serverIp + ":" + serverPort + "/events/");
-        URI uri = URI.create("ws://localhost:8080/events/");
+        URI uri = URI.create("ws://" + serverIp + ":" + serverPort + "/events/");
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
         Session session = null;
         // Attempt Connect
@@ -38,8 +48,6 @@ public class Client {
         }
         System.out.println("connection established");
         logger.info("connection established");
-        // Send a message
-        //session.getBasicRemote().sendText("Hello");
 
 
         while (true) {

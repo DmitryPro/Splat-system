@@ -17,7 +17,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 
-public class ComprehensiveExample {
+public class FrameDisplayer {
 	public static void main(final String[] args) {
 		final Shell shell = new Shell();
 		shell.setSize(800, 500);
