@@ -34,7 +34,9 @@ public class Provider implements Runnable {
     private int providerId;
     private Socket socket;
 
-    /*Used to generate Provider id*/
+    /**
+     * Used to generate provider id
+     */
     private static int uid = 1;
     private BufferedReader dataReader;
 
@@ -42,14 +44,33 @@ public class Provider implements Runnable {
     private XStream xStream;
     private Gson gson;
 
-    public Provider(String type, String ip, int port) throws IOException {
-        this.dataType = type;
+
+    /**
+     * Initialises fields with  values given
+     * and tries to establish connection via Socket.
+     * In case of exception, shuts down(for now).
+     * Generates provider id.
+     *
+     * @param dataType JSON or XML
+     * @param ip       ip address of provider
+     * @param port     port of provider
+     */
+    public Provider(String dataType, String ip, int port) {
+        this.dataType = dataType;
         this.ip = ip;
         this.port = port;
         providerId = uid++;
-        socket = new Socket(InetAddress.getByName(ip), port);
-        InputStream sin = socket.getInputStream();
-        dataReader = new BufferedReader(new InputStreamReader(sin));
+        try {
+            socket = new Socket(InetAddress.getByName(ip), port);
+            InputStream sin = socket.getInputStream();
+            dataReader = new BufferedReader(new InputStreamReader(sin));
+        } catch (IOException e) {
+            logger.error("cannot connect to provider " + e);
+            // this.wait();
+            e.printStackTrace();
+            System.exit(1);//TODO change to reconnect after time
+
+        }
     }
 
 
@@ -57,6 +78,7 @@ public class Provider implements Runnable {
      * Initialises fields with default values
      * and tries to establish connection via Socket.
      * In case of exception, shuts down(for now).
+     * Generates provider id.
      * <p>
      * (@see java.net.Socket)
      */
@@ -71,14 +93,14 @@ public class Provider implements Runnable {
             dataReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         } catch (IOException e) {
             logger.error("cannot connect to provider " + e);
-            // this.wait();
-            System.exit(1);//TODO change to reconnect after time
             e.printStackTrace();
+            System.exit(1);//TODO change to reconnect after time
         }
 
     }
 
     /**
+     * Initiates libraries.
      * Provider lifecycle
      *
      * @see ServerWebSocket#sendData(DataObject)

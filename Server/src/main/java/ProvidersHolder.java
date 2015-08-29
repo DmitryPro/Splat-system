@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.ArrayList;
 
 /**
- * This class contains all providers
- * Runs in a single thread
- * Initiate connections between server and providers
+ * This class contains all providers.
+ * Runs in a single thread.
+ * Initiate connections between server and providers.
  *
  * @author Pavel Gordon
  */
@@ -34,6 +34,11 @@ class ProvidersHolder implements Runnable {
         }
     }
 
+    /**
+     * Adds default provider to providers list
+     * and then starts them in different threads
+     *
+     */
     @Override
     public void run() {
         providers = new ArrayList<>();

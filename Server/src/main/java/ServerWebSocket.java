@@ -79,7 +79,7 @@ public class ServerWebSocket {
     /**
      * Handles receiving text from client
      *
-     * @param message message, which is got by server
+     * @param message message from server
      */
 
     @OnMessage

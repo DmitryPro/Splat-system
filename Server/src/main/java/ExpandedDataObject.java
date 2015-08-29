@@ -23,7 +23,7 @@ public class ExpandedDataObject extends DataObject {
      * Constructor, which creates a copy of DataObject given
      * and initialises providerId with value given
      * @param dataObject object to copy id,value fields
-     * @param providerId generated providerId
+     * @param providerId generated providerId to set
      */
 
 
@@ -35,7 +35,8 @@ public class ExpandedDataObject extends DataObject {
 
 
     /**
-     * String representation of ExpandedDataObject
+     * String representation of ExpandedDataObject,
+     * which is used to debugging
      * @return string representation of ExpandedDataObject
      */
     @Override

@@ -19,3 +19,15 @@ Client/target/*
 Provider/*.iml
 Server/*.iml
 
+
+Provider\.idea\*
+Server\.idea\*
+Client\.idea\*
+
+Provider\target\*
+Server\target\*
+Client\target\*
+
+Provider\*.iml
+Server\*.iml
+

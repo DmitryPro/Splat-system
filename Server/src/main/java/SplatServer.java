@@ -19,8 +19,9 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 
 public class SplatServer {
     private static Logger logger = Logger.getLogger(SplatServer.class);
+    /*TODO  move to properties*/
     private static int DEFAULT_PORT = 8080;
-    private static int DEFAULT_TIMEOUT = 1_0000;
+    private static int DEFAULT_TIMEOUT = 10_000;
     public static void main(String[] args) {
         Server server = new Server();
         ServerConnector connector = new ServerConnector(server);
