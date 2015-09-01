@@ -18,46 +18,48 @@ import javax.websocket.WebSocketContainer;
  *
  * @author Pavel Gordon
  */
-public class Client {
-    private static Logger logger = Logger.getLogger(Client.class);
+public class Client implements Runnable{
+   // private static Logger logger = Logger.getLogger(Client.class);
 
     
     /**
-     * Will be moved into config file
+     * TODO move into config file
      */
 
     static String serverIp = "localhost";
     static int serverPort = 8080;
 
-    public static void main(String[] args) {
+	@Override
+	public void run() {
+		 URI uri = URI.create("ws://" + serverIp + ":" + serverPort + "/events/");
+	        WebSocketContainer container = ContainerProvider.getWebSocketContainer();
+	        Session session = null;
+	        // Attempt Connect
+	        System.out.println("trying connectToServer...");
+	    //    logger.info("trying connectToServer...");
+	        try {
+	            session = container.connectToServer(ClientWebSocket.class, uri);
+	        } catch (ConnectException e) {
+	            System.out.println("ConnectException1");
+	            //logger.error(e.getMessage());
+	            System.exit(1);
+	        } catch (DeploymentException | IOException e) {
+	        	System.out.println("ConnectException2 " + e);
+	            //logger.error(e.getMessage());
+	        }
+	        System.out.println("connection established");
+	        //logger.info("connection established");
 
-        URI uri = URI.create("ws://" + serverIp + ":" + serverPort + "/events/");
-        WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-        Session session = null;
-        // Attempt Connect
-        System.out.println("trying connectToServer...");
-        logger.info("trying connectToServer...");
-        try {
-            session = container.connectToServer(ClientWebSocket.class, uri);
-        } catch (ConnectException e) {
-            System.out.println("ConnectException " + e);
-            logger.error(e.getMessage());
-            System.exit(1);
-        } catch (DeploymentException | IOException e) {
-            logger.error(e.getMessage());
-        }
-        System.out.println("connection established");
-        logger.info("connection established");
 
+	        while (true) {
 
-        while (true) {
+	            //Long live the client!
+	        }
 
-            //Long live the client!
-        }
-
-        /*if (container instanceof LifeCycle) {
-            ((LifeCycle) container).stop();
-        }*/
-    }
+	        /*if (container instanceof LifeCycle) {
+	            ((LifeCycle) container).stop();
+	        }*/
+		
+	}
 
 }

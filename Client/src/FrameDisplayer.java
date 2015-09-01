@@ -18,22 +18,24 @@ import org.eclipse.swt.widgets.Shell;
 
 
 public class FrameDisplayer {
-	public static void main(final String[] args) {
-		final Shell shell = new Shell();
+	public static void main(String[] args) {
+	    Shell shell = new Shell();
 		shell.setSize(800, 500);
 	    shell.open();
-
+	    
 		final LightweightSystem lws = new LightweightSystem(shell);
 		final XYGraphTest testFigure = new XYGraphTest();
 		lws.setContents(testFigure);
-
-	    shell.setText("Comprehensive Example");
+		
+	    shell.setText("Desktop Client app for Splat-server");
 	    final Display display = Display.getDefault();
 	    while (!shell.isDisposed()) {
 	      if (!display.readAndDispatch()) {
             display.sleep();
         }
 	    }
+	    new Thread(new Client()).start();
+	    
 	}
 }
 
@@ -48,8 +50,6 @@ public class FrameDisplayer {
 	private final CircularBufferDataProvider trace2Provider;
 	boolean running = false;
 	private long t;
-	//private final Trace trace4;
-	//private final ToolbarArmedXYGraph toolbarArmedXYGraph;
 	XYGraph mainXYGraph;
 	public XYGraphTest() {
 
@@ -108,94 +108,9 @@ public class FrameDisplayer {
 		trace2.setErrorBarCapWidth(3);
 		xyGraph.addTrace(trace2);
 
-		/*final CircularBufferDataProvider trace3Provider = new CircularBufferDataProvider(true);
-		trace3 = new Trace("Trace3", xyGraph.primaryXAxis, xyGraph.primaryYAxis, trace3Provider);
-		trace3.setPointStyle(PointStyle.XCROSS);
-		trace3.setTraceType(TraceType.BAR);
-		trace3.setLineWidth(4);
-		trace3Provider.setUpdateDelay(100);
-		xyGraph.addTrace(trace3);*/
-
-		//final CircularBufferDataProvider trace4Provider = new CircularBufferDataProvider(false);
-	/*	trace4 = new Trace("Trace 4-Lissajous", x2Axis, y2Axis, trace4Provider);
-		trace4.setPointStyle(PointStyle.POINT);
-		trace4.setPointSize(2);
-
-		trace4Provider.setUpdateDelay(100);
-		trace4Provider.setBufferSize(100);
-		xyGraph.addTrace(trace4);*/
-
-		//toolbarArmedXYGraph = new ToolbarArmedXYGraph(xyGraph);
 		mainXYGraph = xyGraph;
 		add(mainXYGraph);
 
-		//add key listener to XY-Graph. The key pressing will only be monitored when the
-		//graph gains focus.
-		
-		/*xyGraph.setFocusTraversable(true);
-		xyGraph.setRequestFocusEnabled(true);*/
-		
-		/*xyGraph.getPlotArea().addMouseListener(new MouseListener.Stub(){
-			@Override
-			public void mousePressed(final MouseEvent me) {
-				xyGraph.requestFocus();
-			}
-		});	*/
-
-
-		/*xyGraph.addKeyListener(new KeyListener.Stub(){
-			@Override
-			public void keyPressed(final KeyEvent ke) {
-				if((ke.getState() == SWT.CONTROL) && (ke.keycode == 'z')){
-					xyGraph.getOperationsManager().undo();
-				}
-				if((ke.getState() == SWT.CONTROL) && (ke.keycode == 'y')){
-					xyGraph.getOperationsManager().redo();
-				}
-				if((ke.getState() == SWT.CONTROL) && (ke.keycode == 'x')){
-					xyGraph.performAutoScale();
-				}
-				if((ke.getState() == SWT.CONTROL) && (ke.keycode == 's')){
-					final ImageLoader loader = new ImageLoader();
-					loader.data = new ImageData[]{xyGraph.getImage().getImageData()};
-					  final FileDialog dialog = new FileDialog(Display.getDefault().getShells()[0], SWT.SAVE);
-					    dialog
-					        .setFilterNames(new String[] {"PNG Files", "All Files (*.*)" });
-					    dialog.setFilterExtensions(new String[] { "*.png", "*.*" }); // Windows
-					    final String path = dialog.open();
-					    if((path != null) && !path.equals("")) {
-                            loader.save(path, SWT.IMAGE_PNG);
-                        }
-				}
-				if((ke.getState() == SWT.CONTROL) && (ke.keycode + 'a' -97 == 't')){
-					switch (xyGraph.getZoomType()) {
-					case RUBBERBAND_ZOOM:
-						xyGraph.setZoomType(ZoomType.HORIZONTAL_ZOOM);
-						break;
-					case HORIZONTAL_ZOOM:
-						xyGraph.setZoomType(ZoomType.VERTICAL_ZOOM);
-						break;
-					case VERTICAL_ZOOM:
-						xyGraph.setZoomType(ZoomType.ZOOM_IN);
-						break;
-					case ZOOM_IN:
-						xyGraph.setZoomType(ZoomType.ZOOM_OUT);
-						break;
-					case ZOOM_OUT:
-						xyGraph.setZoomType(ZoomType.PANNING);
-						break;
-					case PANNING:
-						xyGraph.setZoomType(ZoomType.NONE);
-						break;
-					case NONE:
-						xyGraph.setZoomType(ZoomType.RUBBERBAND_ZOOM);
-						break;
-					default:
-						break;
-					}
-				}
-			}
-		});*/
 
 		updater = new Runnable(){
 			public void run() {
