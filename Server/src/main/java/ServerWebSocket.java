@@ -72,6 +72,7 @@ public class ServerWebSocket {
      */
     @OnOpen
     public void onWebSocketConnect(Session sess) {
+        System.out.println("Socket Opened: " + sess);
         logger.info("Client Connected: " + sess);
         sessions.add(sess);
     }

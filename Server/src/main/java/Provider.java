@@ -112,7 +112,7 @@ public class Provider implements Runnable {
             DataObject message = dataType.equals(JSON) ? parseJSON() : parseXML();
             if (message == null) continue;
             logger.info("parsed from provider" + message);
-            ServerWebSocket.sendData(new ExpandedDataObject(message, providerId));
+            ServerWebSocket.sendData(encodeJSON(new ExpandedDataObject(message, providerId)));
             logger.info("sent to client " + message);
         }
 
@@ -173,6 +173,10 @@ public class Provider implements Runnable {
 
         result = gson.fromJson(line, DataObject.class);
         return result;
+    }
+    /**/
+    String encodeJSON(ExpandedDataObject dataObject) {
+        return gson.toJson(dataObject);
     }
 
     /*Getters and setters*/
