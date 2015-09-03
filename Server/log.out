@@ -9,7 +9,7 @@ parsed from providerDataObject{id=4, value=1}
 sent to client DataObject{id=4, value=1}
 parsed from providerDataObject{id=9, value=4}
 sent to client DataObject{id=9, value=4}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@2ced895b],behavior=SERVER,connection=WebSocketServerConnection@381492eb{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@f866a12[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@f01b0bb[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@2ced895b],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@2ced895b],behavior=SERVER,connection=WebSocketServerConnection@381492eb{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@f866a12[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@f01b0bb[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@2ced895b],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 parsed from providerDataObject{id=1, value=2}
 sent to client DataObject{id=1, value=2}
 parsed from providerDataObject{id=6, value=0}
@@ -268,7 +268,7 @@ parsed from providerDataObject{id=8, value=1}
 sent to client DataObject{id=8, value=1}
 parsed from providerDataObject{id=0, value=2}
 sent to client DataObject{id=0, value=2}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@12c22898],behavior=SERVER,connection=WebSocketServerConnection@1c05d4b0{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@183a43e8[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@5d38de8b[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@12c22898],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@12c22898],behavior=SERVER,connection=WebSocketServerConnection@1c05d4b0{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@183a43e8[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@5d38de8b[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@12c22898],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 created provider with id[1]
 parsed from providerDataObject{id=6, value=3}
 sent to client DataObject{id=6, value=3}
@@ -282,7 +282,7 @@ parsed from providerDataObject{id=2, value=1}
 sent to client DataObject{id=2, value=1}
 parsed from providerDataObject{id=2, value=0}
 sent to client DataObject{id=2, value=0}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@6bdb8d6c],behavior=SERVER,connection=WebSocketServerConnection@7dffaaa1{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@74101d04[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@6b03072[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@6bdb8d6c],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@6bdb8d6c],behavior=SERVER,connection=WebSocketServerConnection@7dffaaa1{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@74101d04[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@6b03072[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@6bdb8d6c],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 parsed from providerDataObject{id=9, value=3}
 sent to client DataObject{id=9, value=3}
 parsed from providerDataObject{id=7, value=4}
@@ -647,8 +647,8 @@ cannot connect to provider java.net.ConnectException: Connection timed out: conn
 created provider with id[1]
 parsed from providerDataObject{id=8, value=3}
 sent to client DataObject{id=8, value=3}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@76dd2346],behavior=SERVER,connection=WebSocketServerConnection@14a4e712{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@1c6c5a73[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@325c668b[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@76dd2346],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@298430d0],behavior=SERVER,connection=WebSocketServerConnection@2743db90{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@237c5ba0[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@667ed1ab[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@298430d0],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@76dd2346],behavior=SERVER,connection=WebSocketServerConnection@14a4e712{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@1c6c5a73[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@325c668b[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@76dd2346],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@298430d0],behavior=SERVER,connection=WebSocketServerConnection@2743db90{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@237c5ba0[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@667ed1ab[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@298430d0],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 cannot connect to provider java.net.ConnectException: Connection refused: connect
 created provider with id[1]
 parsed from providerDataObject{id=3, value=0}
@@ -663,7 +663,7 @@ parsed from providerDataObject{id=3, value=1}
 sent to client DataObject{id=3, value=1}
 parsed from providerDataObject{id=7, value=1}
 sent to client DataObject{id=7, value=1}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@3387a5cf],behavior=SERVER,connection=WebSocketServerConnection@1c3e9d0d{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@379d6e1[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@69b2be04[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@3387a5cf],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@3387a5cf],behavior=SERVER,connection=WebSocketServerConnection@1c3e9d0d{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@379d6e1[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@69b2be04[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@3387a5cf],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 parsed from providerDataObject{id=8, value=2}
 sent to client DataObject{id=8, value=2}
 parsed from providerDataObject{id=6, value=2}
@@ -686,7 +686,7 @@ parsed from providerDataObject{id=7, value=3}
 sent to client DataObject{id=7, value=3}
 parsed from providerDataObject{id=6, value=0}
 sent to client DataObject{id=6, value=0}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@298430d0],behavior=SERVER,connection=WebSocketServerConnection@2743db90{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@237c5ba0[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@667ed1ab[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@298430d0],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@298430d0],behavior=SERVER,connection=WebSocketServerConnection@2743db90{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@237c5ba0[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@667ed1ab[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@298430d0],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 parsed from providerDataObject{id=7, value=4}
 sent to client DataObject{id=7, value=4}
 parsed from providerDataObject{id=6, value=0}
@@ -895,7 +895,7 @@ parsed from providerDataObject{id=6, value=4}
 sent to client DataObject{id=6, value=4}
 parsed from providerDataObject{id=7, value=3}
 sent to client DataObject{id=7, value=3}
-Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerWebSocket@5fc57552],behavior=SERVER,connection=WebSocketServerConnection@510290da{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@553d1e22[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@103f9ae1[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerWebSocket@5fc57552],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@5fc57552],behavior=SERVER,connection=WebSocketServerConnection@510290da{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@553d1e22[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@103f9ae1[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@5fc57552],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
 parsed from providerDataObject{id=9, value=4}
 sent to client DataObject{id=9, value=4}
 parsed from providerDataObject{id=8, value=1}
@@ -1420,3 +1420,3346 @@ parsed from providerDataObject{id=0, value=0}
 sent to client DataObject{id=0, value=0}
 parsed from providerDataObject{id=8, value=0}
 sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@4e065690],behavior=SERVER,connection=WebSocketServerConnection@110f9b62{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@6fc65604[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@60e1d51f[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@4e065690],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+created provider with id[1]
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@260f577c],behavior=SERVER,connection=WebSocketServerConnection@36c7f819{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@35da2488[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@41642075[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@260f577c],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@44d365d1],behavior=SERVER,connection=WebSocketServerConnection@33abbdc{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@755d056e[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@7b5e85c9[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@44d365d1],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@1f99e774],behavior=SERVER,connection=WebSocketServerConnection@634aa3f4{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@174fe20d[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@7a47d1d0[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@1f99e774],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@7f6f196a],behavior=SERVER,connection=WebSocketServerConnection@71a8e8f7{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@7597721a[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@3095e2cc[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@7f6f196a],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=1, value=3}
+sent to client DataObject{id=1, value=3}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@51cf344e],behavior=SERVER,connection=WebSocketServerConnection@14cda013{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@75e2d31b[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@25139665[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@51cf344e],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@1c56781a],behavior=SERVER,connection=WebSocketServerConnection@74e1be17{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@306c280a[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@3387a5cf[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@1c56781a],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=7, value=2}
+sent to client DataObject{id=7, value=2}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=4, value=1}
+sent to client DataObject{id=4, value=1}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=2, value=1}
+sent to client DataObject{id=2, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=8, value=3}
+sent to client DataObject{id=8, value=3}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=6, value=3}
+sent to client DataObject{id=6, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=5, value=0}
+sent to client DataObject{id=5, value=0}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=8, value=1}
+sent to client DataObject{id=8, value=1}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=2, value=3}
+sent to client DataObject{id=2, value=3}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=6, value=0}
+sent to client DataObject{id=6, value=0}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=2, value=2}
+sent to client DataObject{id=2, value=2}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=5, value=2}
+sent to client DataObject{id=5, value=2}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=9, value=2}
+sent to client DataObject{id=9, value=2}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@17fb20d0],behavior=SERVER,connection=WebSocketServerConnection@2ee23cf4{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@16d2f236[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@70ac470f[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@17fb20d0],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=3, value=4}
+sent to client DataObject{id=3, value=4}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=9, value=4}
+sent to client DataObject{id=9, value=4}
+parsed from providerDataObject{id=4, value=4}
+sent to client DataObject{id=4, value=4}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=3, value=3}
+sent to client DataObject{id=3, value=3}
+parsed from providerDataObject{id=0, value=4}
+sent to client DataObject{id=0, value=4}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+cannot connect to provider java.net.ConnectException: Connection refused: connect
+created provider with id[1]
+parsed from providerDataObject{id=7, value=0}
+sent to client DataObject{id=7, value=0}
+parsed from providerDataObject{id=9, value=1}
+sent to client DataObject{id=9, value=1}
+parsed from providerDataObject{id=8, value=0}
+sent to client DataObject{id=8, value=0}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+Client Connected: WebSocketSession[websocket=JsrAnnotatedEventDriver[websocket=ServerEventHandler@2f4d4f00],behavior=SERVER,connection=WebSocketServerConnection@4b4b205c{f=Flusher[queueSize=0,aggregateSize=0,failure=null],g=Generator[SERVER,validating],p=Parser@b027fd4[ExtensionStack,s=START,c=0,len=0,f=null]},remote=WebSocketRemoteEndpoint@787d973d[batching=true],incoming=JsrAnnotatedEventDriver[websocket=ServerEventHandler@2f4d4f00],outgoing=ExtensionStack[queueSize=0,extensions=[],incoming=org.eclipse.jetty.websocket.jsr356.JsrSession,outgoing=org.eclipse.jetty.websocket.server.WebSocketServerConnection]]
+parsed from providerDataObject{id=4, value=3}
+sent to client DataObject{id=4, value=3}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=1, value=0}
+sent to client DataObject{id=1, value=0}
+parsed from providerDataObject{id=7, value=4}
+sent to client DataObject{id=7, value=4}
+parsed from providerDataObject{id=5, value=3}
+sent to client DataObject{id=5, value=3}
+parsed from providerDataObject{id=7, value=1}
+sent to client DataObject{id=7, value=1}
+parsed from providerDataObject{id=0, value=3}
+sent to client DataObject{id=0, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=6, value=2}
+sent to client DataObject{id=6, value=2}
+parsed from providerDataObject{id=0, value=2}
+sent to client DataObject{id=0, value=2}
+parsed from providerDataObject{id=9, value=3}
+sent to client DataObject{id=9, value=3}
+parsed from providerDataObject{id=6, value=1}
+sent to client DataObject{id=6, value=1}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=3, value=1}
+sent to client DataObject{id=3, value=1}
+parsed from providerDataObject{id=5, value=4}
+sent to client DataObject{id=5, value=4}
+parsed from providerDataObject{id=4, value=0}
+sent to client DataObject{id=4, value=0}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=1, value=4}
+sent to client DataObject{id=1, value=4}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=0, value=1}
+sent to client DataObject{id=0, value=1}
+parsed from providerDataObject{id=3, value=0}
+sent to client DataObject{id=3, value=0}
+parsed from providerDataObject{id=2, value=0}
+sent to client DataObject{id=2, value=0}
+parsed from providerDataObject{id=0, value=0}
+sent to client DataObject{id=0, value=0}
+parsed from providerDataObject{id=1, value=1}
+sent to client DataObject{id=1, value=1}
+parsed from providerDataObject{id=8, value=2}
+sent to client DataObject{id=8, value=2}
+parsed from providerDataObject{id=7, value=3}
+sent to client DataObject{id=7, value=3}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=2, value=4}
+sent to client DataObject{id=2, value=4}
+parsed from providerDataObject{id=1, value=2}
+sent to client DataObject{id=1, value=2}
+parsed from providerDataObject{id=8, value=4}
+sent to client DataObject{id=8, value=4}
+parsed from providerDataObject{id=5, value=1}
+sent to client DataObject{id=5, value=1}
+parsed from providerDataObject{id=3, value=2}
+sent to client DataObject{id=3, value=2}
+parsed from providerDataObject{id=4, value=2}
+sent to client DataObject{id=4, value=2}
+parsed from providerDataObject{id=9, value=0}
+sent to client DataObject{id=9, value=0}
+parsed from providerDataObject{id=6, value=4}
+sent to client DataObject{id=6, value=4}
+created provider with id[1]
+ERROR when parsing xml com.thoughtworks.xstream.mapper.CannotResolveClassException: DataObject
+ERROR when parsing xml com.thoughtworks.xstream.mapper.CannotResolveClassException: DataObject
+ERROR when parsing xml com.thoughtworks.xstream.mapper.CannotResolveClassException: DataObject
+ERROR when parsing xml com.thoughtworks.xstream.mapper.CannotResolveClassException: DataObject
+created provider with id[1]
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
+ERROR when parsing xml java.lang.ClassCastException: DataObject cannot be cast to com.splat.server.DataObject
