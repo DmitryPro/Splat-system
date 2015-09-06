@@ -1,59 +1,66 @@
-import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.util.Scanner;
+import javax.websocket.server.ServerContainer;
 
+import org.apache.log4j.Logger;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.DefaultHandler;
+import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 
 
 /**
- * Created by Freemahn on 24.08.2015.
+ * This class is an entry point to server. When started, it creates a WebSocket endpoint, which provides connection to
+ * server (@see ServerEventHandler) and creates ProvidersHolder instance in another thread (@see ProvidersHolder)
+ *
+ * @author Pavel Gordon
+ *
  */
-class SplatServer {
-    public static void main(String[] ar) throws Exception {
-        Server server = new Server(8080);
-       /* server.setHandler(new DefaultHandler());
 
-        server.start();
-        server.join();*/
+public class SplatServer
+{
+    private static Logger logger = Logger.getLogger(SplatServer.class);
 
-        int providerPort = 6969;
-        String providerAddress = "127.0.0.1";
-        //address = "46.101.58.183";//server address
-        providerAddress = "198.199.73.244";//provider address
+    /**
+     * Default port. TODO move to properties file
+     */
+    private static int DEFAULT_PORT = 8080;
 
-        InetAddress ipAddress = InetAddress.getByName(providerAddress);
-        System.out.println("Trying to connect with address " + providerAddress + " and port " + providerPort + "");
-        Socket providerSocket = new Socket(ipAddress, providerPort);
-        System.out.println("Connected:" + providerSocket.isConnected());
+    /**
+     * Default connection timeout. TODO move to properties file
+     */
+    private static int DEFAULT_TIMEOUT = 10_000;
 
-        InputStream sin = providerSocket.getInputStream();
-        OutputStream sout = providerSocket.getOutputStream();
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(sin));
-        DataOutputStream out = new DataOutputStream(sout);
+    public static void main(String[] args)
+    {
+        Server server = new Server();
+        ServerConnector connector = new ServerConnector(server);
+        connector.setPort(DEFAULT_PORT);
+        server.addConnector(connector);
+        connector.setIdleTimeout(DEFAULT_TIMEOUT);
 
-        String line = null;
-        sout.write("hello\n".getBytes());
-        sout.flush();
-        System.out.println("hello sent");
+        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+        context.setContextPath("/");
+        server.setHandler(context);
 
-        line = br.readLine();
-        System.out.println("answer received" + line);
-        while (true) {
-            line = br.readLine();
-            writeIntoDB(line);
-            if (line.equals("exit")) System.exit(0);
-            System.out.println("Server answer is: " + line);
-            //Sender.addMessage(line);
+        try
+        {
+            // Initialize javax.websocket layer
+            ServerContainer wscontainer = WebSocketServerContainerInitializer.configureContext(context);
+            // Add WebSocket endpoint to javax.websocket layer
+            wscontainer.addEndpoint(ServerEventHandler.class);
+
+            // starts connection to providers in new thread
+            new Thread(new ProvidersHolder()).start();
+            server.start();
+            server.dump(System.err, "tag");
+            server.join();
 
         }
-
+        catch (Throwable t)
+        {
+            logger.error(t);
+            t.printStackTrace(System.err);
+        }
     }
-
-    private static void writeIntoDB(String line) {
-    }
-
 
 }
