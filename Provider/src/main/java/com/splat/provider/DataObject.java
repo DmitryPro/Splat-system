@@ -1,3 +1,5 @@
+package com.splat.provider;
+
 /**
  * Created by ִלטענטי on 25.08.2015.
  */

@@ -1,3 +1,4 @@
+package com.splat.provider;
 import java.util.Random;
 
 /**

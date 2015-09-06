@@ -1,3 +1,4 @@
+package com.splat.provider;
 import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 import org.apache.log4j.Logger;
