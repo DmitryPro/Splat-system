@@ -83,14 +83,15 @@ public class ClientEventHandler
         logger.error("Socket Error: " + cause);
     }
 
+
     /**
      * 
-     * @param txt String JSON-encoded message,  which is got from server
+     * @param encodedMessage String JSON-encoded message, which is got from server
      * @return ExpandedDataObject
      */
-    ExpandedDataObject parseJSON(String txt)
+    ExpandedDataObject parseJSON(String encodedMessage)
     {
-        ExpandedDataObject result = new Gson().fromJson(txt, ExpandedDataObject.class);
+        ExpandedDataObject result = new Gson().fromJson(encodedMessage, ExpandedDataObject.class);
         return result;
     }
 
