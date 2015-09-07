@@ -1,5 +1,7 @@
+package com.splat.provider;
+
 /**
- * This class represents objects, that server sends to clients
+ * This class represents objects that server sends to clients
  *
  * @author Pavel Gordon
  */
@@ -12,7 +14,7 @@ public class ExpandedDataObject extends DataObject
      * Constructor, which initialises id,value with default values and initialises providerId with value given
      * 
      * @param providerId generated providerId
-     * @see Provider#uid
+     * @see com.splat.server.Provider#uid
      */
     public ExpandedDataObject(Integer providerId)
     {
@@ -23,11 +25,11 @@ public class ExpandedDataObject extends DataObject
 
 
     /**
-     * Constructor, which creates a copy of DataObject and initialises providerId with value given
+     * Constructor, which creates a copy of com.splat.provider.DataObject and initialises providerId with value given
      * 
      * @param dataObject object to copy id, value fields
      * @param providerId generated providerId to set
-     * @see Provider#uid
+     * @see com.splat.server.Provider#uid
      */
 
     public ExpandedDataObject(DataObject dataObject, Integer providerId)
@@ -39,9 +41,9 @@ public class ExpandedDataObject extends DataObject
 
 
     /**
-     * String representation of ExpandedDataObject, which is used to debugging
+     * String representation of com.splat.provider.ExpandedDataObject, which is used to debugging
      * 
-     * @return string representation of ExpandedDataObject
+     * @return string representation of com.splat.provider.ExpandedDataObject
      */
     @Override
     public String toString()

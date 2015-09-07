@@ -1,6 +1,7 @@
+package com.splat.server;
+
 import org.apache.log4j.Logger;
 
-import java.io.*;
 import java.util.ArrayList;
 
 
@@ -26,7 +27,7 @@ class ProvidersHolder implements Runnable
 
     /*
      * Maybe this method will be used in the future...
-     * @param provider Provider object, which will be added to ArrayList of Providers
+     * @param provider com.splat.server.Provider object, which will be added to ArrayList of Providers
      */
     public void addProvider(Provider provider)
     {

@@ -1,3 +1,5 @@
+package com.splat.server;
+
 import javax.websocket.server.ServerContainer;
 
 import org.apache.log4j.Logger;
@@ -9,7 +11,7 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 
 /**
  * This class is an entry point to server. When started, it creates a WebSocket endpoint, which provides connection to
- * server (@see ServerEventHandler) and creates ProvidersHolder instance in another thread (@see ProvidersHolder)
+ * server (@see com.splat.server.ServerEventHandler) and creates com.splat.server.ProvidersHolder instance in another thread (@see com.splat.server.ProvidersHolder)
  *
  * @author Pavel Gordon
  *
@@ -20,12 +22,12 @@ public class SplatServer
     private static Logger logger = Logger.getLogger(SplatServer.class);
 
     /**
-     * Default port. TODO move to properties file
+     * Default port.
      */
     private static int DEFAULT_PORT = 8080;
 
     /**
-     * Default connection timeout. TODO move to properties file
+     * Default connection timeout.
      */
     private static int DEFAULT_TIMEOUT = 10_000;
 

@@ -1,4 +1,9 @@
+package com.splat.server;
+
+
 import com.google.gson.Gson;
+import com.splat.provider.DataObject;
+import com.splat.provider.ExpandedDataObject;
 import com.thoughtworks.xstream.XStream;
 import org.apache.log4j.Logger;
 
@@ -85,9 +90,9 @@ public class Provider implements Runnable
         catch (IOException e)
         {
             logger.error("cannot connect to provider " + e);
-            // this.wait();
+
             e.printStackTrace();
-            System.exit(1);// TODO change to reconnect after time
+            System.exit(1);
 
         }
     }
@@ -136,7 +141,7 @@ public class Provider implements Runnable
             DataObject message = dataType.equals(JSON) ? parseJSON() : parseXML();
             if (message == null)
                 continue;
-            logger.info("parsed from provider" + message);
+            // logger.info("parsed from provider" + message);
             ServerEventHandler.sendData(encodeJSON(new ExpandedDataObject(message, providerId)));
             logger.info("sent to client " + message);
         }
@@ -145,10 +150,10 @@ public class Provider implements Runnable
 
 
     /**
-     * Reads XML-encoded DataObject and parses it using xStream
+     * Reads XML-encoded com.splat.provider.DataObject and parses it using xStream
      *
-     * @return result - parsed DataObject or null - if there are problems with either reading from InputStream or
-     *         parsing with xStream
+     * @return result - parsed com.splat.provider.DataObject or null - if there are problems with either reading from
+     *         InputStream or parsing with xStream
      */
 
     DataObject parseXML()
@@ -157,7 +162,7 @@ public class Provider implements Runnable
         String line = "";
         try
         {
-            while (!line.contains("</DataObject>"))
+            while (!line.contains("</com.splat.provider.DataObject>"))
                 line += dataReader.readLine();
             // logger.info("received " + line);
         }
@@ -183,10 +188,10 @@ public class Provider implements Runnable
 
 
     /**
-     * Reads JSON-encoded DataObject and parses it using Gson
+     * Reads JSON-encoded com.splat.provider.DataObject and parses it using Gson
      *
-     * @return result - parsed DataObject or null - if there are problems with either reading from InputStream or
-     *         parsing with Gson
+     * @return result - parsed com.splat.provider.DataObject or null - if there are problems with either reading from
+     *         InputStream or parsing with Gson
      */
     DataObject parseJSON()
     {
@@ -208,70 +213,14 @@ public class Provider implements Runnable
     }
 
 
-    /**/
+    /**
+     * Encodes ExpandedDataObject to JSON
+     * @param dataObject ExpandedDataObject to be encoded
+     * @return JSON-encoded string representation of ExpandedDataObject
+     */
     String encodeJSON(ExpandedDataObject dataObject)
     {
         return gson.toJson(dataObject);
     }
 
-
-    /* Getters and setters */
-    public Socket getSocket()
-    {
-        return socket;
-    }
-
-
-    public void setSocket(Socket socket)
-    {
-        this.socket = socket;
-    }
-
-
-    public String getType()
-    {
-        return dataType;
-    }
-
-
-    public void setType(String type)
-    {
-        this.dataType = type;
-    }
-
-
-    public String getIp()
-    {
-        return ip;
-    }
-
-
-    public void setIp(String ip)
-    {
-        this.ip = ip;
-    }
-
-
-    public int getPort()
-    {
-        return port;
-    }
-
-
-    public void setPort(int port)
-    {
-        this.port = port;
-    }
-
-
-    public int getProviderId()
-    {
-        return providerId;
-    }
-
-
-    public void setProviderId(int providerId)
-    {
-        this.providerId = providerId;
-    }
 }

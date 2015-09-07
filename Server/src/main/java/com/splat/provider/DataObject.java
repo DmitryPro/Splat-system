@@ -1,3 +1,5 @@
+package com.splat.provider;
+
 /**
  * This class represents objects, that provider sends to server
  */
