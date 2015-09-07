@@ -1,27 +1,37 @@
 package com.splat.provider;
+
+
 import java.util.Random;
+
 
 /**
  * @author Dmitry Prokopenko
  */
-public class Generator {
+public class Generator
+{
 
     Integer idxRange;
+
     Integer valueRange;
+
     Random random;
 
-    Generator() {
+
+    Generator()
+    {
         this.random = new Random();
         this.idxRange = Integer.parseInt(PropertiesLoader.getInstance().getValue("idxRange"));
         this.valueRange = Integer.parseInt(PropertiesLoader.getInstance().getValue("valueRange"));
     }
 
+
     /**
      * @see DataObject
      * @return new object with Id from 0 to idxRange and Value from 0 to valueRange.
      */
-    DataObject next() {
-        return new DataObject(random.nextInt(idxRange),random.nextInt(valueRange));
+    DataObject next()
+    {
+        return new DataObject(random.nextInt(idxRange), random.nextInt(valueRange));
     }
 
 }
