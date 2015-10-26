@@ -23,9 +23,9 @@ public class Sender
 
     public static Generator generator = new Generator();
 
-    private static Gson gson = new Gson();
+   // private static Gson gson = new Gson();
 
-    private static XStream xStream = new XStream();
+   // private static XStream xStream = new XStream();
 
 
     /**
@@ -88,16 +88,7 @@ public class Sender
             {
                 while (true)
                 {
-                    DataObject dataObject = generator.next();
-                    if (type)
-                    {
-                        dataObject = (DataObject) xStream.fromXML(xStream.toXML(dataObject));
-                        outputStream.write((xStream.toXML(dataObject) + "\n").getBytes());
-                    }
-                    else
-                    {
-                        outputStream.write((gson.toJson(dataObject) + "\n").getBytes());
-                    }
+                    outputStream.write(generator.next().getBytes());
                     outputStream.flush();
                     Thread.sleep(1000L + random.nextInt(eps));
                 }
