@@ -24,9 +24,9 @@ public class WebSocketClient implements Runnable
      * TODO move into config file
      */
 
-    private String serverIp = "localhost";
+     private String serverIp = "localhost";
 
-    private int serverPort = 8080;
+     private int serverPort = 8080;
 
 
     @Override

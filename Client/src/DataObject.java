@@ -1,6 +1,5 @@
 /**
  * This class represents objects, that provider sends to server
- * 
  * @see ExpandedDataObject
  */
 public class DataObject
@@ -9,12 +8,10 @@ public class DataObject
      * id of some parameter
      */
     Integer id;
-
     /**
      * value of some parameter
      */
     Integer value;
-
 
     /**
      * Constructor, which initiates id,value with default values and initiates providerId with value given
